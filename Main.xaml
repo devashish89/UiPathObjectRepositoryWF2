@@ -1,0 +1,139 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1514,1818" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="552,1613" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser 'LoginScreen'" sap:VirtualizedContainerService.HintSize="510,1521" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,1305" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,226" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="tomsmith">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://the-internet.herokuapp.com/login" ContentHash="Hm-cDzdmSk6DZ7clx3cmWg" DesignTimeRectangle="483, 312, 470, 32" ElementType="InputBox" FriendlyName="'INPUT  username'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' aaname='Username' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAdoAAAAkCAYAAAAuC/tyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEHSURBVHhe7dUxisNAFETBvf/ZdBNJiYJRMmLMX7DBgTAD6qwKXtZ5/w0AIMbRAkDQ52iXZZEkSQ/19nW067qObdvGvu+SJGmy+tD60tujPY5jtNbGeZ6SJGmy+tD60tujrUHvfVzXJUmSJqsPrS+9Pdp64xoCAPPqQ+tLHS0ABDhaAAhytAAQ5GgBIMjRAkCQowWAIEcLAEGOFgCCHC0ABDlaAAhytAAQ5GgBIMjRAkCQowWAIEcLAEGOFgCCHC0ABDlaAAhytAAQ5GgBIMjRAkCQowWAIEcLAEGOFgCCHC0ABP082tba6L3/DyVJ0lz1ofWlt0crSZKe6e1ztADA8xwtAMSM8QLcvaPdSVIXvAAAAABJRU5ErkJggg==" InformativeScreenshot="10752d575591dbbdcc166f45208bc397.png" Reference="f43WEMRBikCfTZs_n2oMZQ/lgey0ceAkEC5aKx_RX6CUA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Internet' /&gt;" SearchSteps="FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="483, 295, 470, 14" ElementType="Text" FriendlyName="'Username'" FullSelectorArgument="&lt;webctrl aaname='Username' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Username' tag='LABEL' type='' check:text='Username' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAdoAAAASCAYAAAD8KB/CAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHOSURBVHhe7dpdjoIwFEDh2SC7GbZi2Ifsw5DMInQVnf7S21tRAe/b+RISK1Dw6Vj0xwEAADOEFgAAQ4QWAABDhBYAAEMitHc3/w5uuuWhdJvcMExuyUMAAPAZQgsAgKFDob1fRz8e8ja6+ZF3RGmedf/v7N8pFjf5eeZyvt/3F15f5uac8VrP6OZT+5dLGC/imHQ/4f1nx6d7qPuGC18fAAB29odWr26bcZpDh7DGLEdOxK1Ee71unK/EO0e2O77GPQVVj8U9NPeXrl8/Y3+/AAB80/nQSmFfs4INQtxKCHXocji7Ve/GfQSP2Y06rHJV2t1fvX68ll7Bxvk2Pg8AACcdeHScV5k+hs1K1GsfKcvtfGjlo+BuBatD282Xjm/nkBuhBQDYOPVnqBousWLsVrTS/tCu1yjHfLKifRVavaIFAMCQCG0K0bPfK18HVPzOuRHkam9oayRXJ0L7/osAAADf1YQ2hVKFLYfv+Z+LvCZ8+bGyDt96/JHQyuPT+Oij43K+/DJBfAEAltrQBjGcIWZ1k2EMYtw295cYlk2ucHU434XWi6Euc4VgtrHcF1pPfz4iCwAw1IcWAAB8DaEFAMAQoQUAwBChBQDAjHP/WfJO5TnuXp4AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" Text="Username" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='LABEL' type='' /&gt;" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,226" sap2010:WorkflowViewState.IdRef="NTypeInto_2" Text="SuperSecretPassword!">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://the-internet.herokuapp.com/login" ContentHash="_mdhM_Ngsk-sdP_J0dfRNw" DesignTimeRectangle="483, 375, 470, 32" ElementType="InputBoxPassword" FriendlyName="'INPUT  password'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' aaname='Password' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAdoAAAAkCAYAAAAuC/tyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEHSURBVHhe7dUxisNAFETBvf/ZdBNJiYJRMmLMX7DBgTAD6qwKXtZ5/w0AIMbRAkDQ52iXZZEkSQ/19nW067qObdvGvu+SJGmy+tD60tujPY5jtNbGeZ6SJGmy+tD60tujrUHvfVzXJUmSJqsPrS+9Pdp64xoCAPPqQ+tLHS0ABDhaAAhytAAQ5GgBIMjRAkCQowWAIEcLAEGOFgCCHC0ABDlaAAhytAAQ5GgBIMjRAkCQowWAIEcLAEGOFgCCHC0ABDlaAAhytAAQ5GgBIMjRAkCQowWAIEcLAEGOFgCCHC0ABP082tba6L3/DyVJ0lz1ofWlt0crSZKe6e1ztADA8xwtAMSM8QLcvaPdSVIXvAAAAABJRU5ErkJggg==" InformativeScreenshot="f0a7fada451e8557ccec22136fa97470.png" Reference="f43WEMRBikCfTZs_n2oMZQ/Ey_HFM6IV0eiK_d5gVkHgA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Internet' /&gt;" SearchSteps="FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="483, 358, 470, 14" ElementType="Text" FriendlyName="'Password'" FullSelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' type='' check:text='Password' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAdoAAAASCAYAAAD8KB/CAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHrSURBVHhe7drrbcIwFEDhLsg2ZBWUPfAeiC1gCtf2tZ3rR1KC6lRF55Nom9zIpL+OHPiyAABgGEILAMBAhBYAgIEILQAAA6nQPqw5n+zp1L6m6yNe8xnuF/d/Xe7xCACAcZrQzrd4mN3t/GGxJbQAgKO8EFo3uU4qTO3OV0c4XJtnkzXPOHD6M1mvWeNs3CTxsZ/dT1Gus5xP15k0T2s8jZ3U9TOhBQAcZGdoY2RVpCR6MZq3uQyfPt6YLet7KeTVtXEu77fMymPZfRcRjZHN/1d4X0ILADjGz6GtQ1UL85XQaluzsIaOpew603v6R73yt4S0vBe9I27nIcTF7ljWI7QAgCO8/WWoEKt8TfkYOJ3vBbE/84FUsXYR9IFc4hkjrKOu+HtZC20vquUOGgCAcV56dKzlwBaff/bjJ1F9bZZimQPr1/Xv4X+nKBJaAMA/szO0aueZrMRPyJoSwVo1CztZ486ltWQn67/YtNxTG9JynXbOo2MAwF96I7T6Gjle/TKUjvDWLB/7tdI1cj/157ohnOpcedwLcXUu3AehBQAcY/ej4xyq8PKhlJClnenyWFheer2tWQ6rCmBvN+pJXNM6OsS90Do54u7l1jPsaAEAB1GhBQAAv43QAgAwEKEFAGAgQgsAwDDWfgPxQle0FxbdGgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" Text="Password" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='LABEL' type='' /&gt;" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'LoginButton'" sap:VirtualizedContainerService.HintSize="434,166" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://the-internet.herokuapp.com/login" ContentHash="JQYwK_3gCUelPHjeszprlA" DesignTimeRectangle="508, 435, 112, 32" FriendlyName="'Login'" FullSelectorArgument="&lt;webctrl tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='I' type='' aaname=' Login' check:text='Login' /&gt;" ImageBase64="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" InformativeScreenshot="7757555da23eb0e080bf98a0069e7576.png" Reference="f43WEMRBikCfTZs_n2oMZQ/I_AovNf0eUuRjkIgndQ2Kg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Internet' /&gt;" SearchSteps="FuzzySelector, Image" Text="Login" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='I' type='' /&gt;" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser 'LogOutScreen'" sap:VirtualizedContainerService.HintSize="434,475" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" Version="V1">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,259" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'LogOut'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://the-internet.herokuapp.com/secure" ContentHash="UmkFKHd_NUyPr0j-3O8LxA" DesignTimeRectangle="475, 286, 104, 45" ElementType="Text" FriendlyName="'Logout'" FullSelectorArgument="&lt;webctrl parentid='content' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='content' tag='A' type='' aaname=' Logout' check:text='Logout' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGwAAAAxCAYAAAA/dkzkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKXSURBVHhe7ZxBjsIwDEXnTj0UvQjiHohzoB4BIY2EBDsWCMSCBfsMhiaxG4dhQScx8yO9jZM0lV/tdtUvh2FqQJixIYTt93u3Xq/darUCFUAuyAkfQRhN7HY7d7lc3PV6BRVALsgJlxaEkc3z+exOp5M7Ho+gAsgFOSE3fgRhVIKQVR/khNz4IYRpG0B5IMwYEGYMCDMGhBkDwowBYcaAMGNAmDEgzBgQZgwIM0YVwjaL1jVN45rJ3G2UeRCpQNjGzSc3WTdh7WKjzBti2blOi7+RCoR1bkrVdWO61OZtcO8Sf9AhygtbTh/tsGnd/FuZZ3Szh9jArEvXfc9dy9bcq9bHeEIH69Tz/b3xc0QsdofIdNQqKy7stfdXrMIELZkZfMsNZyZIaX4db9UyptzXyFVWWBh7QrVq6YmVxRKaVCa7VkiarIB7y+WVFc7U7sPHuMRXY+NRWNgr76+4Rn6UDPbmWmsQ9GhVsbpk60oqXWuj4Uy+V4uNR1lhIZlPns7sGiksSfhwfx8P1Tqo6OF+2fr6db++0/rYiBQVlk0yJydsUFG5a4V4n1BdWNoS/Tpe+VpMFTsiRYXlnnaJ1hJjLOzVWmKIxSQHgayFxZjf668fr5WuIaJoLnFMCgpjSc+QJnkIe2+EStTgSc6fqz4QnkkrWqu67lmneBPlhD1NMMGTrEjTksMq6r5/Kd9fcW0qJKkQfi3a7+930A3EfT3tFO+hYIW9Ey9ASn6t5driQ4Sxj4YEKdE6HyKM0KR9lizig4T9DyDMGBBmDAgzBoQZA8KMAWHGgDBjQJgxIMwYEGYMVRj9C+JwOKgbQDnIifqfDvrbyna7hbSKIBfkRP0TDg2aIJtUgqA85ILLoiGEYdQ/IMzUcO4H2kRHXOGysOQAAAAASUVORK5CYII=" InformativeScreenshot="cedd93eedecbdbb8c395066dde072d7a.png" Reference="f43WEMRBikCfTZs_n2oMZQ/Hih9VCMTYEiCyiucLIvS8Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='The Internet' /&gt;" SearchSteps="FuzzySelector, Image" Text="Logout" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='A' type='' /&gt;" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp BrowserType="Chrome" ContentHash="RgoPfMw2NEGzkbbVtsPVWQ" IconBase64="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" InformativeScreenshot="d40d55eb90c4902d44c9bc371c822645.png" Reference="f43WEMRBikCfTZs_n2oMZQ/PfuNAFuVm0q1MFiqsdpkbQ" Selector="&lt;html app='chrome.exe' title='The Internet'/&gt;" Url="https://the-internet.herokuapp.com/secure" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp BrowserType="Chrome" ContentHash="W7CMNCqriESORC0MTGbqHQ" IconBase64="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" InformativeScreenshot="df52b502d8d38fc620999b549356dfbc.png" Reference="f43WEMRBikCfTZs_n2oMZQ/4aKHgCg3uUW5SSZeQJAJbg" Selector="&lt;html app='chrome.exe' title='The Internet'/&gt;" Url="https://the-internet.herokuapp.com/login" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
